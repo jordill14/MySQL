@@ -1,0 +1,14 @@
+Uncaught java.sql.SQLException exception in thread "main" in a method MySQLAccess.readDataBase() with signature ()V
+Exception in thread "main" java.sql.SQLException: Value '0000-00-00' can not be represented as java.sql.Date
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.ResultSetRow.getDateFast(ResultSetRow.java:145) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/ResultSetRow.class]
+	at com.mysql.jdbc.ByteArrayRow.getDateFast(ByteArrayRow.java:243) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/ByteArrayRow.class]
+	at com.mysql.jdbc.ResultSetImpl.getDate(ResultSetImpl.java:2015) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/ResultSetImpl.class]
+	at com.mysql.jdbc.ResultSetImpl.getDate(ResultSetImpl.java:1978) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/ResultSetImpl.class]
+	at com.mysql.jdbc.ResultSetImpl.getDate(ResultSetImpl.java:2034) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/ResultSetImpl.class]
+	at MySQLAccess.writeResultSet(MySQLAccess.java:43) [file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/bin/MySQLAccess.class]
+	at MySQLAccess.readDataBase(MySQLAccess.java:24) [file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/bin/MySQLAccess.class]
+	at Main.main(Main.java:6) [file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/bin/Main.class]

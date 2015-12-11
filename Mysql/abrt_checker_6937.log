@@ -1,0 +1,11 @@
+Uncaught java.sql.SQLException exception in thread "main" in a method MySQLAccess.preparedState() with signature (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+Exception in thread "main" java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/SQLError.class]
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3319) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/PreparedStatement.class]
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3304) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/PreparedStatement.class]
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4016) [jar:file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/lib/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar!/com/mysql/jdbc/PreparedStatement.class]
+	at MySQLAccess.preparedState(MySQLAccess.java:68) [file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/bin/MySQLAccess.class]
+	at Main.main(Main.java:7) [file:/home/users/inf/wiaw2/iaw47647361/Documents/Mysql/bin/Main.class]
